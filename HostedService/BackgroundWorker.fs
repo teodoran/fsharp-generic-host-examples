@@ -13,7 +13,6 @@ type BackgroundWorker(logger: ILogger<BackgroundWorker>) =
             logger.LogInformation "Launching 🚀"
 
             let timer = Timer.everySecond (fun now -> logger.LogInformation $"Running {now:T}")
-
             do! Task.wait token
 
             logger.LogInformation "Cleaning Up 🧹"
