@@ -1,0 +1,6 @@
+# .NET build artifacts
+bin/
+obj/
+
+# VS Code user settings
+.vscode
